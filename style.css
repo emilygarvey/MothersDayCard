@@ -34,10 +34,9 @@ body {
     height: 100%;
     width: 50%;
     position: absolute;
-    left: 50%;
+    left: 25%;
     cursor: pointer;
-    /*box-shadow: 0 0 10px 0 #777;*/
-    transition: transform 1s;
+    transition: transform 1s, left 1s;
     transform-origin: 0;
     transform-style: preserve-3d;
 }
@@ -60,7 +59,6 @@ body {
 }
 
 .back {
-    /*box-shadow: 0 0 10px 0 #777;*/
     transform: rotateY(180deg);
 }
 

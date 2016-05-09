@@ -14,11 +14,22 @@ $(function() {
         });
     }
 
+    function centerCard(currPage) {
+        if (!currPage) {
+            $pages.css('left', '25%');
+        } else if (currPage === $pages.length) {
+            $pages.css('left', '75%');
+        } else {
+            $pages.css('left', '50%');
+        }
+    }
+
     function prevPage() {
         if (currPage) {
             currPage--;
             setZIndex(currPage);
             $pages.eq(currPage).removeClass('flipped');
+            centerCard(currPage);
         }
     }
 
@@ -27,6 +38,7 @@ $(function() {
             setZIndex(currPage);
             $pages.eq(currPage).addClass('flipped');
             currPage++;
+            centerCard(currPage);
         }
     }
 
