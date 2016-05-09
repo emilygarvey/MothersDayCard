@@ -47,6 +47,13 @@ $(function() {
     $('#prev').click(prevPage);
     $('#next').click(nextPage);
 
-    $('.front').click(nextPage);
-    $('.back').click(prevPage);
+    $('.page').click(function() {
+        if($(this).hasClass('flipped')) {
+            console.log('next');
+            prevPage();
+        } else {
+            console.log('prev');
+            nextPage();
+        }
+    });
 });
