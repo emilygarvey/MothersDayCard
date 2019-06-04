@@ -1,12 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    color: #551a8b;
-}
-
-@font-face {
-    font-family: LobsterTwo;
-    src: url('LobsterTwo-Regular.otf') format('opentype');
+    color: #0080ff;
 }
 
 body {
@@ -14,12 +9,12 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    background-image: url('pink-background.jpg');
+    background: #00ffcc;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     font-size: 4vmin;
-    font-family: LobsterTwo;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -62,11 +57,11 @@ body {
     transform: rotateY(180deg);
 }
 
-.flower {
+.photo {
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    background-image: url('flowers.png');
+    background-image: url('');
 }
 
 .control-panel {
@@ -93,6 +88,11 @@ body {
 
 .page:not(.flipped) ~ .page:not(.flipped) {
     z-index: 0;
+}
+.paragraph-center {
+    margin: 0;
+    padding: 2vmin;
+    text-align: center;
 }
 .paragraph {
     margin: 0;
